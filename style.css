@@ -1,0 +1,13 @@
+#highScores {
+  float: left;
+}
+
+#timer {
+  float: right;
+  clear: right;
+}
+
+#flip {
+  display: none;
+}
+

@@ -6,13 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
 </head>
-<body>
+<body onload="showTimer()">
   <p id="highScores">View High Scores</p>
-  <div id="timer">Time: </div>
-  <h2>Coding Quiz Challenge!</h2>
-  <p id="quizOverview">You will have 60 seconds to answer all the questions. Your score is calculated by time remaining. Answering quickly and correctly results in a higher score. Answering incorrectly results in a time penalty of -15 seconds. When time runs out or all questions are answered, enter your initials for the High Score rankings!</p>
-  <button type="button" class="btn btn-primary btn-sm">Start Quiz!</button>
+  <div id="timer"></div>
+  <br><br>
+  <div id="flip">This is where the quiz questions will appear after clicking button!</div>
+  
+  <div id="landingPage" class="container">
+    <div class="row">
+     <h2 class="col-md-12">Coding Quiz Challenge!</h2>
+    </div>
+    <div class="row">
+      <p id="quizOverview" class="col-md-12">You will have 60 seconds to answer all the questions. Your score is calculated by time remaining. Answering quickly and correctly results in a higher score. Answering incorrectly results in a time penalty of -15 seconds. When time runs out or all questions are answered, enter your initials for the High Score rankings. Good luck!</p>
+    </div>
+    <div class="row">
+      <button type="button" class="btn btn-primary btn-sm col-md-12" onclick="flip(); startTimer();">Start Quiz!</button>
+    </div>
+  </div>
 
+  <script src="script.js"></script>
+  <script type="text/javascript" src="questions.js"></script>
+  
 </body>
 </html>
