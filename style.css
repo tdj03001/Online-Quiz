@@ -7,7 +7,18 @@
   clear: right;
 }
 
-#quizBlock {
+#quizBlock1 {
   display: none;
 }
 
+#quizBlock2 {
+  display: none;
+}
+
+#quizBlock3 {
+  display: none;
+}
+
+#quizBlock4 {
+  display: none;
+}
