@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Coding Quiz</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body onload="showTimer()">
   <p id="highScores">View High Scores</p>
   <div id="timer"></div>
   <br><br>
-  <div id="quizBlock">This is where the quiz questions will appear after clicking button!</div>
-  
+
   <div id="landingPage" class="container">
     <div class="row">
      <h2 class="col-md-12">Coding Quiz Challenge!</h2>
@@ -22,9 +22,54 @@
       <p id="quizOverview" class="col-md-12">You will have 60 seconds to answer all the questions. Your score is calculated by time remaining. Answering quickly and correctly results in a higher score. Answering incorrectly results in a time penalty of -15 seconds. When time runs out or all questions are answered, enter your initials for the High Score rankings. Good luck!</p>
     </div>
     <div class="row">
-      <button type="button" class="btn btn-primary btn-sm col-md-12" onclick="flip(); startTimer();">Start Quiz!</button>
+      <button type="button" class="btn btn-primary btn-sm col-md-12" onclick="flip1(); startTimer();">Start Quiz!</button>
     </div>
   </div>
+
+  <div id="quizBlock1" class="card w-75">
+    <div class="card-body">
+      <h5 class="card-title">Question 1</h5>
+      <p class="card-text">Commonly used data types DO NOT include:</p>
+      <a href="#" class="btn btn-primary" onclick="flip2()">Strings</a>
+      <a href="#" class="btn btn-primary" onclick="flip2()">Booleans</a>
+      <a href="#" class="btn btn-primary" onclick="flip2()">Alerts</a>
+      <a href="#" class="btn btn-primary" onclick="flip2()">Numbers</a>
+    </div>
+  </div>
+    
+  <div id="quizBlock2" class="card w-75">
+    <div class="card-body">
+      <h5 class="card-title">Question 2</h5>
+      <p class="card-text">The condition in an if / else statement is enclosed within ____.</p>
+      <a href="#" class="btn btn-primary" onclick="flip3()">Quotes</a>
+      <a href="#" class="btn btn-primary" onclick="flip3()">Curly Brackets</a>
+      <a href="#" class="btn btn-primary" onclick="flip3()">Square Brackets</a>
+      <a href="#" class="btn btn-primary" onclick="flip3()">Parentheses</a>
+    </div>
+  </div>
+
+  <div id="quizBlock3" class="card w-75">
+    <div class="card-body">
+      <h5 class="card-title">Question 3</h5>
+      <p class="card-text">Arrays in JavaScript can be used to store:</p>
+      <a href="#" class="btn btn-primary" onclick="flip4()">Numbers and Strings</a>
+      <a href="#" class="btn btn-primary" onclick="flip4()">Other Arrays</a>
+      <a href="#" class="btn btn-primary" onclick="flip4()">Booleans</a>
+      <a href="#" class="btn btn-primary" onclick="flip4()">All of the above</a>
+    </div>
+  </div>
+  
+  <div id="quizBlock4" class="card w-75">
+    <div class="card-body">
+      <h5 class="card-title">Question 4</h5>
+      <p class="card-text">A very useful tool used during development and debugging for printing content to the debugger is:</p>
+      <a href="#" class="btn btn-primary">JavaScript</a>
+      <a href="#" class="btn btn-primary">Terminal / Bash</a>
+      <a href="#" class="btn btn-primary">For Loops</a>
+      <a href="#" class="btn btn-primary">Console.log</a>
+    </div>
+  </div>
+   
 
   <script src="script.js"></script>
   <script type="text/javascript" src="questions.js"></script>
