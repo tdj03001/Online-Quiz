@@ -1,9 +1,6 @@
-UPenn-Week-4-Homework-OnlineQuiz
+**Online Quiz**
 
-
-
-
-USAGE:
+**Usage**
 
 The first view of the application displays a button that starts the quiz.
 
@@ -18,5 +15,3 @@ The timer stops when all questions have been answered or the timer reaches 0.
 After the game ends, the user can save their initials and score to a highscores view using local storage.
 
 
-
-SOURCES:
